@@ -17,7 +17,12 @@ struct TopMoverView: View {
             ScrollView(.horizontal) {
                 HStack(spacing: 16) {
                     ForEach(viewModel.topMovingCoins) { coin in
-                        TopMoverItemView(coin: coin)
+                        NavigationLink {
+                            LazyNavigationView(CoinDetailsView(coin: coin)
+                            )
+                        } label: {
+                            TopMoverItemView(coin: coin)
+                        }
                     }
                 }
             }

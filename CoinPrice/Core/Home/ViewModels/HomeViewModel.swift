@@ -10,7 +10,7 @@ import Foundation
 class HomeViewModel : ObservableObject {
     @Published var coins = [Coin]()
     @Published var topMovingCoins = [Coin]()
-    
+    @Published var isLoading = true
     init() {
         fetchCoinData()
     }
@@ -23,13 +23,14 @@ class HomeViewModel : ObservableObject {
         URLSession.shared.dataTask(with: url) { data, response, error in
             if let error = error {
                 print("DeBuG: Errpr \(error.localizedDescription)")
+                self.isLoading = false
                 return
             }
             
             if let response = response as? HTTPURLResponse {
                 print("DEBUG: Response code \(response.statusCode)")
             }
-        
+            
             guard let data = data else { return }
             
             do {
@@ -37,11 +38,13 @@ class HomeViewModel : ObservableObject {
                 DispatchQueue.main.async {
                     self.coins = coins
                     self.configureTopMovingCoins()
+                    self.isLoading = false
                 }
             } catch let error {
                 print("DUBUS: Failed to decode with error: \(error)")
+                self.isLoading = false
             }
-                        
+            
         }.resume()
     }
     
