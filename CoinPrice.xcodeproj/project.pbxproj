@@ -21,6 +21,7 @@
 		715BB21129B9987A00C78304 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715BB21029B9987A00C78304 /* Double.swift */; };
 		7197CA9F29BBB4E7006882B4 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7197CA9E29BBB4E7006882B4 /* LoadingIndicator.swift */; };
 		7197CAA129BBB6C7006882B4 /* LazyNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7197CAA029BBB6C7006882B4 /* LazyNavigationView.swift */; };
+		7197CAA529BBBB6E006882B4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7197CAA429BBBB6E006882B4 /* .gitignore */; };
 		71A5033E29BB82D800734063 /* CoinDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A5033D29BB82D800734063 /* CoinDetailViewModel.swift */; };
 		71A5034029BB881000734063 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A5033F29BB881000734063 /* ChartData.swift */; };
 		71A5034229BB88D200734063 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A5034129BB88D200734063 /* Date.swift */; };
@@ -49,6 +50,7 @@
 		715BB21029B9987A00C78304 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		7197CA9E29BBB4E7006882B4 /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
 		7197CAA029BBB6C7006882B4 /* LazyNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyNavigationView.swift; sourceTree = "<group>"; };
+		7197CAA429BBBB6E006882B4 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		71A5033D29BB82D800734063 /* CoinDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailViewModel.swift; sourceTree = "<group>"; };
 		71A5033F29BB881000734063 /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
 		71A5034129BB88D200734063 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		715BB1BA29B9015200C78304 = {
 			isa = PBXGroup;
 			children = (
+				7197CAA429BBBB6E006882B4 /* .gitignore */,
 				715BB1C529B9015200C78304 /* CoinPrice */,
 				715BB1C429B9015200C78304 /* Products */,
 			);
@@ -282,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				715BB1CE29B9015500C78304 /* Preview Assets.xcassets in Resources */,
+				7197CAA529BBBB6E006882B4 /* .gitignore in Resources */,
 				715BB1CB29B9015500C78304 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
